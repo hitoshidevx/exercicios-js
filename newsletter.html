@@ -27,6 +27,27 @@
             </form>
         </div>
     </div>
+
+    <script>
+
+            let novoEmail = document.querySelector("#newsInputEmail");
+            let btnEnviar = document.querySelector("#news__button");
+
+            btnEnviar.addEventListener('click', function(event)
+            {
+                event.preventDefault();
+
+                if(novoEmail.value.includes("@") == true)
+                {
+                    alert("Email cadastrado!!");
+                } else {
+                    alert("Email inválido, insira-o novamente.");
+                }
+            })
+
+
+
+    </script>
     
 </body>
 </html>
